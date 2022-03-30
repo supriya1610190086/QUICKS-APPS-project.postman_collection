@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "8d53e33c-40d3-4acb-a178-e118313323a8",
+		"name": "QUICKS APPS  project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\":\"priya\",\n    \"Email\": \"priya@navgurukul.org\",\n    \"password\": \"priya@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"Email\": \"priya@navgurukul.org\",\n    \"password\": \"priya@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/ReqeustFriend",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJOYW1lIjoicHJpeWEiLCJyb2xlIjoicmVnaXN0cmF0aW9uIiwiaWF0IjoxNjQ3NTkzMzA4LCJleHAiOjE2NDc2MDA1MDh9.8Fsc-cioZFCHuOjR6CWCJpytd5jBC908rDexAVPTK5o"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/ReqeustFriend"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/AcceptRequest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJOYW1lIjoicml5YSIsInJvbGUiOiJyZWdpc3RyYXRpb24iLCJpYXQiOjE2NDc1ODA5NjksImV4cCI6MTY0NzU4ODE2OX0.L1OXI40BBuCwnL4Gb3kTuh9hnbFLqktUAS9KUSIoTZY"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"friend_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/AcceptRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/RejectRequest/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/RejectRequest/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Createpost",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJOYW1lIjoicml5YSIsInJvbGUiOiJyZWdpc3RyYXRpb24iLCJpYXQiOjE2NDc1Nzc4OTYsImV4cCI6MTY0NzU4NTA5Nn0.4NPqgKFbLGBYn_4LP9p3MEZQcR7JOH6OacD7A0h9G0A"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Title\": \"pune\",\n    \"description\": \"pune in maharashtra.\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Createpost"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Deletepost/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/Deletepost/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Visibility",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJOYW1lIjoicml5YSIsInJvbGUiOiJyZWdpc3RyYXRpb24iLCJpYXQiOjE2NDc1OTExMDcsImV4cCI6MTY0NzU5ODMwN30.Ite_eTcIRb-SkzOhRT_eRhrmUr06_FNLjrKVeJw4qoE"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"privatepublic\":\"private\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Visibility"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/GetByIdPost/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/GetByIdPost/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/user_create_All_post/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/user_create_All_post/1"
+			},
+			"response": []
+		}
+	]
+}
